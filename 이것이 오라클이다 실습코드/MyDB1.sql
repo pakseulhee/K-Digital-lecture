@@ -1,5 +1,6 @@
 select name, to_char(birthday, 'rr/mm/dd') birthday from student;
 
+
 select empno, ename, hiredate
 from emp
 where to_char(hiredate, 'mm') in (01, 02,  03);
@@ -46,7 +47,7 @@ from emp;
 
 select deptno, job, round(avg(sal),1)
 from emp
-group by deptno, ROLLUP(job); --¾Õ¿¡ÀÖ´Â ÄÃ·³À¸·Î ¼Ò°è¸¦ ÇÑ°Í°ú °°°í ¸¶Áö¸·¿¡ ÀüÃ¼ ¼Ò°è
+group by deptno, ROLLUP(job); --ì•ì—ìˆëŠ” ì»¬ëŸ¼ìœ¼ë¡œ ì†Œê³„ë¥¼ í•œê²ƒê³¼ ê°™ê³  ë§ˆì§€ë§‰ì— ì „ì²´ ì†Œê³„
 
 select deptno, job, round(avg(sal),1)
 from emp
