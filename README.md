@@ -23,4 +23,4 @@
 | [2021-02-16 TUE] | 자체 강의교안  | - select, from, where 절 연습문제 <br />- 단일행 함수 연습문제<br/>- 복수행 함수    |126
 | [2021-02-17 WED] | 자체 강의교안  | - select, update, insert, delete <br />- 서브쿼리 <br/>- constraint    |135
 | [2021-02-18 THU] | 자체 강의교안  | - 쿼리 연습문제 풀기 <br />- 서브쿼리 <br/>- 데이터모델링 <br/>- eclipse를 통한 JDBC 연결    |143
-| [2021-02-19 FRI] | 자체 강의교안  | - - eclipse를 통한 JDBC 연결 <br />- 서브쿼리 <br/>- JDBC내에서의 삽입,삭제,갱신,조회 연습  |152
+| [2021-02-19 FRI] | 자체 강의교안  | - eclipse를 통한 JDBC 연결 <br />- 서브쿼리 <br/>- JDBC내에서의 삽입,삭제,갱신,조회 연습  |152
