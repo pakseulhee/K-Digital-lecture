@@ -63,52 +63,52 @@ create table professor
  hpage  varchar2(50)) tablespace users;
 
 insert into professor
-values(1001,'Á¶ÀÎÇü','captain','Á¤±³¼ö',550,to_date('1980-06-23','YYYY-MM-DD'),100,101,'captain@abc.net','http://www.abc.net');
+values(1001,'ì¡°ì¸í˜•','captain','ì •êµìˆ˜',550,to_date('1980-06-23','YYYY-MM-DD'),100,101,'captain@abc.net','http://www.abc.net');
 
 insert into professor
-values(1002,'¹Ú½Â°ï','sweety','Á¶±³¼ö',380,to_date('1987-01-30','YYYY-MM-DD'),60,101,'sweety@abc.net','http://www.abc.net');
+values(1002,'ë°•ìŠ¹ê³¤','sweety','ì¡°êµìˆ˜',380,to_date('1987-01-30','YYYY-MM-DD'),60,101,'sweety@abc.net','http://www.abc.net');
 
 insert into professor
-values (1003,'¼Ûµµ±Ç','powerman','ÀüÀÓ°­»ç',270,to_date('1998-03-22','YYYY-MM-DD'),null,101,'pman@power.com','http://www.power.com');
+values (1003,'ì†¡ë„ê¶Œ','powerman','ì „ì„ê°•ì‚¬',270,to_date('1998-03-22','YYYY-MM-DD'),null,101,'pman@power.com','http://www.power.com');
 
 insert into professor
-values (2001,'¾ç¼±Èñ','lamb1','ÀüÀÓ°­»ç',250,to_date('2001-09-01','YYYY-MM-DD'),null,102,'lamb1@hamail.net',null);
+values (2001,'ì–‘ì„ í¬','lamb1','ì „ì„ê°•ì‚¬',250,to_date('2001-09-01','YYYY-MM-DD'),null,102,'lamb1@hamail.net',null);
 
 insert into professor
-values (2002,'±è¿µÁ¶','number1','Á¶±³¼ö',350,to_date('1985-11-30','YYYY-MM-DD'),80,102,'number1@naver.com','http://num1.naver.com');
+values (2002,'ê¹€ì˜ì¡°','number1','ì¡°êµìˆ˜',350,to_date('1985-11-30','YYYY-MM-DD'),80,102,'number1@naver.com','http://num1.naver.com');
 
 insert into professor
-values (2003,'ÁÖ½ÂÀç','bluedragon','Á¤±³¼ö',490,to_date('1982-04-29','YYYY-MM-DD'),90,102,'bdragon@naver.com',null);
+values (2003,'ì£¼ìŠ¹ì¬','bluedragon','ì •êµìˆ˜',490,to_date('1982-04-29','YYYY-MM-DD'),90,102,'bdragon@naver.com',null);
 
 insert into professor
-values (3001,'±èµµÇü','angel1004','Á¤±³¼ö',530,to_date('1981-10-23','YYYY-MM-DD'),110,103,'angel1004@hanmir.com',null);
+values (3001,'ê¹€ë„í˜•','angel1004','ì •êµìˆ˜',530,to_date('1981-10-23','YYYY-MM-DD'),110,103,'angel1004@hanmir.com',null);
 
 insert into professor
-values (3002,'³ªÇÑ¿­','naone10','Á¶±³¼ö',330,to_date('1997-07-01','YYYY-MM-DD'),50,103,'naone10@empal.com',null);
+values (3002,'ë‚˜í•œì—´','naone10','ì¡°êµìˆ˜',330,to_date('1997-07-01','YYYY-MM-DD'),50,103,'naone10@empal.com',null);
 
 insert into professor
-values (3003,'±èÇöÁ¤','only-u','ÀüÀÓ°­»ç',290,to_date('2002-02-24','YYYY-MM-DD'),null,103,'only_u@abc.com',null);
+values (3003,'ê¹€í˜„ì •','only-u','ì „ì„ê°•ì‚¬',290,to_date('2002-02-24','YYYY-MM-DD'),null,103,'only_u@abc.com',null);
 
 insert into professor
-values (4001,'½É½¼','simson','Á¤±³¼ö',570,to_date('1981-10-23','YYYY-MM-DD'),130,201,'chebin@daum.net',null);
+values (4001,'ì‹¬ìŠ¨','simson','ì •êµìˆ˜',570,to_date('1981-10-23','YYYY-MM-DD'),130,201,'chebin@daum.net',null);
 
 insert into professor
-values (4002,'ÃÖ½½±â','gogogo','Á¶±³¼ö',330,to_date('2009-08-30','YYYY-MM-DD'),null,201,'gogogo@def.com',null);
+values (4002,'ìµœìŠ¬ê¸°','gogogo','ì¡°êµìˆ˜',330,to_date('2009-08-30','YYYY-MM-DD'),null,201,'gogogo@def.com',null);
 
 insert into professor
-values (4003,'¹Ú¿ø¹ü','mypride','Á¶±³¼ö',310,to_date('1999-12-01','YYYY-MM-DD'),50,202,'mypride@hanmail.net',null);
+values (4003,'ë°•ì›ë²”','mypride','ì¡°êµìˆ˜',310,to_date('1999-12-01','YYYY-MM-DD'),50,202,'mypride@hanmail.net',null);
 
 insert into professor
-values (4004,'Â÷¹üÃ¶','ironman','ÀüÀÓ°­»ç',260,to_date('2009-01-28','YYYY-MM-DD'),null,202,'ironman@naver.com',null);
+values (4004,'ì°¨ë²”ì² ','ironman','ì „ì„ê°•ì‚¬',260,to_date('2009-01-28','YYYY-MM-DD'),null,202,'ironman@naver.com',null);
 
 insert into professor
-values (4005,'¹Ùºñ','standkang','Á¤±³¼ö',500,to_date('1985-09-18','YYYY-MM-DD'),80,203,'standkang@naver.com',null);
+values (4005,'ë°”ë¹„','standkang','ì •êµìˆ˜',500,to_date('1985-09-18','YYYY-MM-DD'),80,203,'standkang@naver.com',null);
 
 insert into professor 
-values (4006,'Àü¹Î','napeople','ÀüÀÓ°­»ç',220,to_date('2010-06-28','YYYY-MM-DD'),null,301,'napeople@jass.com',null);
+values (4006,'ì „ë¯¼','napeople','ì „ì„ê°•ì‚¬',220,to_date('2010-06-28','YYYY-MM-DD'),null,301,'napeople@jass.com',null);
 
 insert into professor
-values (4007,'ÇãÀº','silver-her','Á¶±³¼ö',290,to_date('2001-05-23','YYYY-MM-DD'),30,301,'silver-her@daum.net',null);
+values (4007,'í—ˆì€','silver-her','ì¡°êµìˆ˜',290,to_date('2001-05-23','YYYY-MM-DD'),30,301,'silver-her@daum.net',null);
 
 commit;
 
@@ -120,40 +120,40 @@ create table department
   build  varchar2(24))tablespace users;
 
 insert into department 
-values (101,'ÄÄÇ»ÅÍ°øÇĞ°ú',100,'Á¤º¸°ü');
+values (101,'ì»´í“¨í„°ê³µí•™ê³¼',100,'ì •ë³´ê´€');
 
 insert into department
-values (102,'¸ÖÆ¼¹Ìµğ¾î°øÇĞ°ú',100,'¸ÖÆ¼¹Ìµğ¾î°ü');
+values (102,'ë©€í‹°ë¯¸ë””ì–´ê³µí•™ê³¼',100,'ë©€í‹°ë¯¸ë””ì–´ê´€');
 
 insert into department
-values (103,'¼ÒÇÁÆ®¿ş¾î°øÇĞ°ú',100,'¼ÒÇÁÆ®¿ş¾î°ü');
+values (103,'ì†Œí”„íŠ¸ì›¨ì–´ê³µí•™ê³¼',100,'ì†Œí”„íŠ¸ì›¨ì–´ê´€');
 
 insert into department
-values (201,'ÀüÀÚ°øÇĞ°ú',200,'ÀüÀÚÁ¦¾î°ü');
+values (201,'ì „ìê³µí•™ê³¼',200,'ì „ìì œì–´ê´€');
 
 insert into department
-values (202,'±â°è°øÇĞ°ú',200,'±â°è½ÇÇè°ü');
+values (202,'ê¸°ê³„ê³µí•™ê³¼',200,'ê¸°ê³„ì‹¤í—˜ê´€');
 
 insert into department
-values (203,'È­ÇĞ°øÇĞ°ú',200,'È­ÇĞ½Ç½À°ü');
+values (203,'í™”í•™ê³µí•™ê³¼',200,'í™”í•™ì‹¤ìŠµê´€');
 
 insert into department
-values (301,'¹®ÇåÁ¤º¸ÇĞ°ú',300,'ÀÎ¹®°ü');
+values (301,'ë¬¸í—Œì •ë³´í•™ê³¼',300,'ì¸ë¬¸ê´€');
 
 insert into department
-values (100,'ÄÄÇ»ÅÍÁ¤º¸ÇĞºÎ',10,null);
+values (100,'ì»´í“¨í„°ì •ë³´í•™ë¶€',10,null);
 
 insert into department
-values (200,'¸ŞÄ«Æ®·Î´Ğ½ºÇĞºÎ',10,null);
+values (200,'ë©”ì¹´íŠ¸ë¡œë‹‰ìŠ¤í•™ë¶€',10,null);
 
 insert into department
-values (300,'ÀÎ¹®»çÈ¸ÇĞºÎ',20,null);
+values (300,'ì¸ë¬¸ì‚¬íšŒí•™ë¶€',20,null);
 
 insert into department
-values (10,'°ø°ú´ëÇĞ',null,null);
+values (10,'ê³µê³¼ëŒ€í•™',null,null);
 
 insert into department
-values (20,'ÀÎ¹®´ëÇĞ',null,null);
+values (20,'ì¸ë¬¸ëŒ€í•™',null,null);
 
 commit;
  
@@ -175,64 +175,64 @@ create table student
   profno  number(4)) tablespace users;
 
 insert into student values (
-9411,'¼­Áø¼ö','75true',4,'7510231901810',to_date('1975-10-23','YYYY-MM-DD'),'055)381-2158',180,72,101,201,1001);
+9411,'ì„œì§„ìˆ˜','75true',4,'7510231901810',to_date('1975-10-23','YYYY-MM-DD'),'055)381-2158',180,72,101,201,1001);
 
 insert into student values (
-9412,'¼­Àç¼ö','pooh94',4,'7502241128467',to_date('1975-02-24','YYYY-MM-DD'),'051)426-1700',172,64,102,null,2001);
+9412,'ì„œì¬ìˆ˜','pooh94',4,'7502241128467',to_date('1975-02-24','YYYY-MM-DD'),'051)426-1700',172,64,102,null,2001);
 
 insert into student values (
-9413,'ÀÌ¹Ì°æ','angel000',4,'7506152123648',to_date('1975-06-15','YYYY-MM-DD'),'053)266-8947',168,52,103,203,3002);
+9413,'ì´ë¯¸ê²½','angel000',4,'7506152123648',to_date('1975-06-15','YYYY-MM-DD'),'053)266-8947',168,52,103,203,3002);
 
 insert into student values (
-9414,'±èÀç¼ö','gunmandu',4,'7512251063421',to_date('1975-12-25','YYYY-MM-DD'),'02)6255-9875',177,83,201,null,4001);
+9414,'ê¹€ì¬ìˆ˜','gunmandu',4,'7512251063421',to_date('1975-12-25','YYYY-MM-DD'),'02)6255-9875',177,83,201,null,4001);
 
 insert into student values (
-9415,'¹Úµ¿È£','pincle1',4,'7503031639826',to_date('1975-03-03','YYYY-MM-DD'),'031)740-6388',182,70,202,null,4003);
+9415,'ë°•ë™í˜¸','pincle1',4,'7503031639826',to_date('1975-03-03','YYYY-MM-DD'),'031)740-6388',182,70,202,null,4003);
 
 insert into student values (
-9511,'±è½Å¿µ','bingo',3,'7601232186327',to_date('1976-01-23','YYYY-MM-DD'),'055)333-6328',164,48,101,null,1002);
+9511,'ê¹€ì‹ ì˜','bingo',3,'7601232186327',to_date('1976-01-23','YYYY-MM-DD'),'055)333-6328',164,48,101,null,1002);
 
 insert into student values (
-9512,'½ÅÀº°æ','jjang1',3,'7604122298371',to_date('1976-04-12','YYYY-MM-DD'),'051)418-9627',161,42,102,201,2002);
+9512,'ì‹ ì€ê²½','jjang1',3,'7604122298371',to_date('1976-04-12','YYYY-MM-DD'),'051)418-9627',161,42,102,201,2002);
 
 insert into student values (
-9513,'¿À³ª¶ó','nara5',3,'7609112118379',to_date('1976-09-11','YYYY-MM-DD'),'051)724-9618',177,55,202,null,4003);
+9513,'ì˜¤ë‚˜ë¼','nara5',3,'7609112118379',to_date('1976-09-11','YYYY-MM-DD'),'051)724-9618',177,55,202,null,4003);
 
 insert into student values (
-9514,'±¸À¯¹Ì','guyume',3,'7601202378641',to_date('1976-01-20','YYYY-MM-DD'),'055)296-3784',160,58,301,101,4007);
+9514,'êµ¬ìœ ë¯¸','guyume',3,'7601202378641',to_date('1976-01-20','YYYY-MM-DD'),'055)296-3784',160,58,301,101,4007);
 
 insert into student values (
-9515,'ÀÓ¼¼Çö','shyun1',3,'7610122196482',to_date('1976-10-12','YYYY-MM-DD'),'02)312-9838',171,54,201,null,4001);
+9515,'ì„ì„¸í˜„','shyun1',3,'7610122196482',to_date('1976-10-12','YYYY-MM-DD'),'02)312-9838',171,54,201,null,4001);
 
 insert into student values (
-9611,'ÀÏÁö¸Å','onejimae',2,'7711291186223',to_date('1977-11-29','YYYY-MM-DD'),'02)6788-4861',182,72,101,null,1002);
+9611,'ì¼ì§€ë§¤','onejimae',2,'7711291186223',to_date('1977-11-29','YYYY-MM-DD'),'02)6788-4861',182,72,101,null,1002);
 
 insert into student values (
-9612,'±èÁø¿í','samjang7',2,'7704021358674',to_date('1977-04-02','YYYY-MM-DD'),'055)488-2998',171,70,102,null,2001);
+9612,'ê¹€ì§„ìš±','samjang7',2,'7704021358674',to_date('1977-04-02','YYYY-MM-DD'),'055)488-2998',171,70,102,null,2001);
 
 insert into student values (
-9613,'¾È±¤ÈÆ','nonnon1',2,'7709131276431',to_date('1977-09-13','YYYY-MM-DD'),'053)736-4981',175,82,201,null,4002);
+9613,'ì•ˆê´‘í›ˆ','nonnon1',2,'7709131276431',to_date('1977-09-13','YYYY-MM-DD'),'053)736-4981',175,82,201,null,4002);
 
 insert into student values (
-9614,'±è¹®È£','munho',2,'7702261196365',to_date('1977-02-26','YYYY-MM-DD'),'02)6175-3945',166,51,201,null,4003);
+9614,'ê¹€ë¬¸í˜¸','munho',2,'7702261196365',to_date('1977-02-26','YYYY-MM-DD'),'02)6175-3945',166,51,201,null,4003);
 
 insert into student values (
-9615,'³ëÁ¤È£','star123',2,'7712141254963',to_date('1977-12-14','YYYY-MM-DD'),'051)785-6984',184,62,301,null,4007);
+9615,'ë…¸ì •í˜¸','star123',2,'7712141254963',to_date('1977-12-14','YYYY-MM-DD'),'051)785-6984',184,62,301,null,4007);
 
 insert into student values (
-9711,'ÀÌÀ±³ª','prettygirl',1,'7808192157498',to_date('1978-08-19','YYYY-MM-DD'),'055)278-3649',162,48,101,null,null);
+9711,'ì´ìœ¤ë‚˜','prettygirl',1,'7808192157498',to_date('1978-08-19','YYYY-MM-DD'),'055)278-3649',162,48,101,null,null);
 
 insert into student values (
-9712,'¾ÈÀº¼ö','silverwt',1,'7801051776346',to_date('1978-01-05','YYYY-MM-DD'),'02)381-5440',175,63,201,null,null);
+9712,'ì•ˆì€ìˆ˜','silverwt',1,'7801051776346',to_date('1978-01-05','YYYY-MM-DD'),'02)381-5440',175,63,201,null,null);
 
 insert into student values (
-9713,'ÀÎ¿µ¹Î','youngmin',1,'7808091786954',to_date('1978-08-09','YYYY-MM-DD'),'031)345-5677',173,69,201,null,null);
+9713,'ì¸ì˜ë¯¼','youngmin',1,'7808091786954',to_date('1978-08-09','YYYY-MM-DD'),'031)345-5677',173,69,201,null,null);
 
 insert into student values (
-9714,'±èÁÖÇö','kimjh',1,'7803241981987',to_date('1978-03-24','YYYY-MM-DD'),'055)423-9870',179,81,102,null,null);
+9714,'ê¹€ì£¼í˜„','kimjh',1,'7803241981987',to_date('1978-03-24','YYYY-MM-DD'),'055)423-9870',179,81,102,null,null);
 
 insert into student values (
-9715,'Çã¿ì','wooya2702',1,'7802232116780',to_date('1978-02-23','YYYY-MM-DD'),'02)6122-2345',163,51,103,null,null);
+9715,'í—ˆìš°','wooya2702',1,'7802232116780',to_date('1978-02-23','YYYY-MM-DD'),'02)6122-2345',163,51,103,null,null);
 
 commit;
 
@@ -251,26 +251,27 @@ CREATE TABLE EMP2 (
  PEMPNO      NUMBER
 );
 
-INSERT INTO EMP2 VALUES (19900101,'³ª»çÀå',TO_DATE('19640125','YYYYMMDD'),'0001','Á¤±ÔÁ÷','054)223-0001','À½¾Ç°¨»ó',100000000,'´ëÇ¥ÀÌ»ç',null);
-INSERT INTO EMP2 VALUES (19960101,'ÀüºÎÀå',TO_DATE('19730322','YYYYMMDD'),'1000','Á¤±ÔÁ÷','02)6255-8000','µ¶¼­',72000000,'ºÎÀå',19900101);
-INSERT INTO EMP2 VALUES (19970201,'ÃÖÀÏµµ',TO_DATE('19750415','YYYYMMDD'),'1000','Á¤±ÔÁ÷','02)6255-8005','¿îµ¿',50000000,'°úÀå',19960101);
-INSERT INTO EMP2 VALUES (19930331,'¹é¿ø¸¸',TO_DATE('19760525','YYYYMMDD'),'1001','Á¤±ÔÁ÷','02)6255-8010','ÀÚÀü°ÅÅ¸±â',60000000,'Â÷Àå',19960101);
-INSERT INTO EMP2 VALUES (19950303,'Ãµ¸¸µæ',TO_DATE('19730615','YYYYMMDD'),'1002','Á¤±ÔÁ÷','02)6255-8020','¸¶¶óÅæ',56000000,'°úÀå',19960101);
-INSERT INTO EMP2 VALUES (19966102,'ÀÏÁö¸Å',TO_DATE('19720705','YYYYMMDD'),'1003','Á¤±ÔÁ÷','052)223-4000','À½¾Ç°¨»ó',75000000,'ºÎÀå',19900101);
-INSERT INTO EMP2 VALUES (19930402,'À¯°ü¼ø',TO_DATE('19720815','YYYYMMDD'),'1004','Á¤±ÔÁ÷','042)998-7005','µî»ê',51000000,'°úÀå',19966102);
-INSERT INTO EMP2 VALUES (19960303,'±è¹®È£',TO_DATE('19710925','YYYYMMDD'),'1005','Á¤±ÔÁ÷','031)564-3340','µî»ê',35000000,'´ë¸®',19966102);
-INSERT INTO EMP2 VALUES (19970112,'³ëÁ¤È£',TO_DATE('19761105','YYYYMMDD'),'1006','Á¤±ÔÁ÷','054)223-4500','¼ö¿µ',68000000,'ºÎÀå',19900101);
-INSERT INTO EMP2 VALUES (19960212,'ÀÌÀ±³ª',TO_DATE('19721215','YYYYMMDD'),'1007','Á¤±ÔÁ÷','054)223-4600',null,49000000,'°úÀå',19970112);
-INSERT INTO EMP2 VALUES (20000101,'ÀÌÅÂ¹é',TO_DATE('19850125','YYYYMMDD'),'1008','°è¾àÁ÷','051)123-4567','µî»ê', 30000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000102,'±è¼³¾Ç',TO_DATE('19830322','YYYYMMDD'),'1009','°è¾àÁ÷','031)234-5678','³¬½Ã', 30000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000203,'ÃÖ¿À´ë',TO_DATE('19820415','YYYYMMDD'),'1010','°è¾àÁ÷','02)2345-6789','¹ÙµÏ', 30000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000334,'¹ÚÁö¸®',TO_DATE('19810525','YYYYMMDD'),'1011','°è¾àÁ÷','053)456-7890','³ë·¡', 30000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000305,'Á¤ºÏ¾Ç',TO_DATE('19800615','YYYYMMDD'),'1008','¼ö½ÀÁ÷','051)567-8901','µ¶¼­', 22000000,'',19960212);
-INSERT INTO EMP2 VALUES (20006106,'À¯µµºÀ',TO_DATE('19800705','YYYYMMDD'),'1009','¼ö½ÀÁ÷','031)678-9012','¼ú',   22000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000407,'À±ÁÖ¿Õ',TO_DATE('19800815','YYYYMMDD'),'1010','¼ö½ÀÁ÷','02)2789-0123','¿À¶ô', 22000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000308,'°­¿ù¾Ç',TO_DATE('19800925','YYYYMMDD'),'1011','ÀÎÅÏÁ÷','053)890-1234','°ñÇÁ', 20000000,'',19960212);
-INSERT INTO EMP2 VALUES (20000119,'Àå±İ°­',TO_DATE('19801105','YYYYMMDD'),'1004','ÀÎÅÏÁ÷','042)901-2345','¼ú',   20000000,'',19930402);
-INSERT INTO EMP2 VALUES (20000210,'³ªÇÑ¶ó',TO_DATE('19801215','YYYYMMDD'),'1005','ÀÎÅÏÁ÷','031)345-3456','µ¶¼­', 20000000,'',19960303);
+                 
+INSERT INTO EMP2 VALUES (19900101,'ë‚˜ì‚¬ì¥',TO_DATE('19640125','YYYYMMDD'),'0001','ì •ê·œì§','054)223-0001','ìŒì•…ê°ìƒ',100000000,'ëŒ€í‘œì´ì‚¬',null);
+INSERT INTO EMP2 VALUES (19960101,'ì „ë¶€ì¥',TO_DATE('19730322','YYYYMMDD'),'1000','ì •ê·œì§','02)6255-8000','ë…ì„œ',72000000,'ë¶€ì¥',19900101);
+INSERT INTO EMP2 VALUES (19970201,'ìµœì¼ë„',TO_DATE('19750415','YYYYMMDD'),'1000','ì •ê·œì§','02)6255-8005','ìš´ë™',50000000,'ê³¼ì¥',19960101);
+INSERT INTO EMP2 VALUES (19930331,'ë°±ì›ë§Œ',TO_DATE('19760525','YYYYMMDD'),'1001','ì •ê·œì§','02)6255-8010','ìì „ê±°íƒ€ê¸°',60000000,'ì°¨ì¥',19960101);
+INSERT INTO EMP2 VALUES (19950303,'ì²œë§Œë“',TO_DATE('19730615','YYYYMMDD'),'1002','ì •ê·œì§','02)6255-8020','ë§ˆë¼í†¤',56000000,'ê³¼ì¥',19960101);
+INSERT INTO EMP2 VALUES (19966102,'ì¼ì§€ë§¤',TO_DATE('19720705','YYYYMMDD'),'1003','ì •ê·œì§','052)223-4000','ìŒì•…ê°ìƒ',75000000,'ë¶€ì¥',19900101);
+INSERT INTO EMP2 VALUES (19930402,'ìœ ê´€ìˆœ',TO_DATE('19720815','YYYYMMDD'),'1004','ì •ê·œì§','042)998-7005','ë“±ì‚°',51000000,'ê³¼ì¥',19966102);
+INSERT INTO EMP2 VALUES (19960303,'ê¹€ë¬¸í˜¸',TO_DATE('19710925','YYYYMMDD'),'1005','ì •ê·œì§','031)564-3340','ë“±ì‚°',35000000,'ëŒ€ë¦¬',19966102);
+INSERT INTO EMP2 VALUES (19970112,'ë…¸ì •í˜¸',TO_DATE('19761105','YYYYMMDD'),'1006','ì •ê·œì§','054)223-4500','ìˆ˜ì˜',68000000,'ë¶€ì¥',19900101);
+INSERT INTO EMP2 VALUES (19960212,'ì´ìœ¤ë‚˜',TO_DATE('19721215','YYYYMMDD'),'1007','ì •ê·œì§','054)223-4600',null,49000000,'ê³¼ì¥',19970112);
+INSERT INTO EMP2 VALUES (20000101,'ì´íƒœë°±',TO_DATE('19850125','YYYYMMDD'),'1008','ê³„ì•½ì§','051)123-4567','ë“±ì‚°', 30000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000102,'ê¹€ì„¤ì•…',TO_DATE('19830322','YYYYMMDD'),'1009','ê³„ì•½ì§','031)234-5678','ë‚šì‹œ', 30000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000203,'ìµœì˜¤ëŒ€',TO_DATE('19820415','YYYYMMDD'),'1010','ê³„ì•½ì§','02)2345-6789','ë°”ë‘‘', 30000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000334,'ë°•ì§€ë¦¬',TO_DATE('19810525','YYYYMMDD'),'1011','ê³„ì•½ì§','053)456-7890','ë…¸ë˜', 30000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000305,'ì •ë¶ì•…',TO_DATE('19800615','YYYYMMDD'),'1008','ìˆ˜ìŠµì§','051)567-8901','ë…ì„œ', 22000000,'',19960212);
+INSERT INTO EMP2 VALUES (20006106,'ìœ ë„ë´‰',TO_DATE('19800705','YYYYMMDD'),'1009','ìˆ˜ìŠµì§','031)678-9012','ìˆ ',   22000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000407,'ìœ¤ì£¼ì™•',TO_DATE('19800815','YYYYMMDD'),'1010','ìˆ˜ìŠµì§','02)2789-0123','ì˜¤ë½', 22000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000308,'ê°•ì›”ì•…',TO_DATE('19800925','YYYYMMDD'),'1011','ì¸í„´ì§','053)890-1234','ê³¨í”„', 20000000,'',19960212);
+INSERT INTO EMP2 VALUES (20000119,'ì¥ê¸ˆê°•',TO_DATE('19801105','YYYYMMDD'),'1004','ì¸í„´ì§','042)901-2345','ìˆ ',   20000000,'',19930402);
+INSERT INTO EMP2 VALUES (20000210,'ë‚˜í•œë¼',TO_DATE('19801215','YYYYMMDD'),'1005','ì¸í„´ì§','031)345-3456','ë…ì„œ', 20000000,'',19960303);
 COMMIT;
 
 drop table dept2 cascade constraint;
@@ -282,19 +283,19 @@ CREATE TABLE DEPT2 (
  AREA        VARCHAR2(26)
 );
 
-INSERT INTO DEPT2 VALUES ('0001','»çÀå½Ç','','Æ÷Ç×º»»ç');
-INSERT INTO DEPT2 VALUES ('1000','°æ¿µÁö¿øºÎ','0001','¼­¿ïÁö»ç');
-INSERT INTO DEPT2 VALUES ('1001','Àç¹«°ü¸®ÆÀ','1000','¼­¿ïÁö»ç');
-INSERT INTO DEPT2 VALUES ('1002','ÃÑ¹«ÆÀ','1000','¼­¿ïÁö»ç');
-INSERT INTO DEPT2 VALUES ('1003','±â¼úºÎ','0001','Æ÷Ç×º»»ç');
-INSERT INTO DEPT2 VALUES ('1004','H/WÁö¿ø','1003','´ëÀüÁö»ç');
-INSERT INTO DEPT2 VALUES ('1005','S/WÁö¿ø','1003','°æ±âÁö»ç');
-INSERT INTO DEPT2 VALUES ('1006','¿µ¾÷ºÎ','0001','Æ÷Ç×º»»ç');
-INSERT INTO DEPT2 VALUES ('1007','¿µ¾÷±âÈ¹ÆÀ','1006','Æ÷Ç×º»»ç');
-INSERT INTO DEPT2 VALUES ('1008','¿µ¾÷1ÆÀ','1007','ºÎ»êÁö»ç');
-INSERT INTO DEPT2 VALUES ('1009','¿µ¾÷2ÆÀ','1007','°æ±âÁö»ç');
-INSERT INTO DEPT2 VALUES ('1010','¿µ¾÷3ÆÀ','1007','¼­¿ïÁö»ç');
-INSERT INTO DEPT2 VALUES ('1011','¿µ¾÷4ÆÀ','1007','¿ï»êÁö»ç');
+INSERT INTO DEPT2 VALUES ('0001','ì‚¬ì¥ì‹¤','','í¬í•­ë³¸ì‚¬');
+INSERT INTO DEPT2 VALUES ('1000','ê²½ì˜ì§€ì›ë¶€','0001','ì„œìš¸ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1001','ì¬ë¬´ê´€ë¦¬íŒ€','1000','ì„œìš¸ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1002','ì´ë¬´íŒ€','1000','ì„œìš¸ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1003','ê¸°ìˆ ë¶€','0001','í¬í•­ë³¸ì‚¬');
+INSERT INTO DEPT2 VALUES ('1004','H/Wì§€ì›','1003','ëŒ€ì „ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1005','S/Wì§€ì›','1003','ê²½ê¸°ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1006','ì˜ì—…ë¶€','0001','í¬í•­ë³¸ì‚¬');
+INSERT INTO DEPT2 VALUES ('1007','ì˜ì—…ê¸°íšíŒ€','1006','í¬í•­ë³¸ì‚¬');
+INSERT INTO DEPT2 VALUES ('1008','ì˜ì—…1íŒ€','1007','ë¶€ì‚°ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1009','ì˜ì—…2íŒ€','1007','ê²½ê¸°ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1010','ì˜ì—…3íŒ€','1007','ì„œìš¸ì§€ì‚¬');
+INSERT INTO DEPT2 VALUES ('1011','ì˜ì—…4íŒ€','1007','ìš¸ì‚°ì§€ì‚¬');
 
 commit;
 
@@ -305,37 +306,37 @@ CREATE TABLE cal
     day   varchar2(3),
     num_day varchar2(3)) ;
 
-insert into cal values ('1','ÀÏ','1');
-insert into cal values ('1','¿ù','2');
-insert into cal values ('1','È­','3');
-insert into cal values ('1','¼ö','4');
-insert into cal values ('1','¸ñ','5');
-insert into cal values ('1','±İ','6');
-insert into cal values ('1','Åä','7');
-insert into cal values ('2','ÀÏ','8');
-insert into cal values ('2','¿ù','9');
-insert into cal values ('2','È­','10');
-insert into cal values ('2','¼ö','11');
-insert into cal values ('2','¸ñ','12');
-insert into cal values ('2','±İ','13');
-insert into cal values ('2','Åä','14');
-insert into cal values ('3','ÀÏ','15');
-insert into cal values ('3','¿ù','16');
-insert into cal values ('3','È­','17');
-insert into cal values ('3','¼ö','18');
-insert into cal values ('3','¸ñ','19');
-insert into cal values ('3','±İ','20');
-insert into cal values ('3','Åä','21');
-insert into cal values ('4','ÀÏ','22');
-insert into cal values ('4','¿ù','23');
-insert into cal values ('4','È­','24');
-insert into cal values ('4','¼ö','25');
-insert into cal values ('4','¸ñ','26');
-insert into cal values ('4','±İ','27');
-insert into cal values ('4','Åä','28');
-insert into cal values ('5','ÀÏ','29');
-insert into cal values ('5','¿ù','30');
-insert into cal values ('5','È­','31');
+insert into cal values ('1','ì¼','1');
+insert into cal values ('1','ì›”','2');
+insert into cal values ('1','í™”','3');
+insert into cal values ('1','ìˆ˜','4');
+insert into cal values ('1','ëª©','5');
+insert into cal values ('1','ê¸ˆ','6');
+insert into cal values ('1','í† ','7');
+insert into cal values ('2','ì¼','8');
+insert into cal values ('2','ì›”','9');
+insert into cal values ('2','í™”','10');
+insert into cal values ('2','ìˆ˜','11');
+insert into cal values ('2','ëª©','12');
+insert into cal values ('2','ê¸ˆ','13');
+insert into cal values ('2','í† ','14');
+insert into cal values ('3','ì¼','15');
+insert into cal values ('3','ì›”','16');
+insert into cal values ('3','í™”','17');
+insert into cal values ('3','ìˆ˜','18');
+insert into cal values ('3','ëª©','19');
+insert into cal values ('3','ê¸ˆ','20');
+insert into cal values ('3','í† ','21');
+insert into cal values ('4','ì¼','22');
+insert into cal values ('4','ì›”','23');
+insert into cal values ('4','í™”','24');
+insert into cal values ('4','ìˆ˜','25');
+insert into cal values ('4','ëª©','26');
+insert into cal values ('4','ê¸ˆ','27');
+insert into cal values ('4','í† ','28');
+insert into cal values ('5','ì¼','29');
+insert into cal values ('5','ì›”','30');
+insert into cal values ('5','í™”','31');
 commit ;
 
 DROP TABLE gift purge ;
@@ -346,16 +347,16 @@ create table gift
   g_start  number ,
   g_end  number );
 
-insert into gift values(1,'ÂüÄ¡¼¼Æ®',1,100000);
-insert into gift values(2,'¼¤Çª¼¼Æ®',100001,200000);
-insert into gift values(3,'¼¼Â÷¿ëÇ°¼¼Æ®',200001,300000);
-insert into gift values(4,'ÁÖ¹æ¿ëÇ°¼¼Æ®',300001,400000);
-insert into gift values(5,'»ê¾Ç¿ëÀÚÀü°Å',400001,500000);
-insert into gift values(6,'LCD¸ğ´ÏÅÍ',500001,600000);
-insert into gift values(7,'³ëÆ®ºÏ',600001,700000);
-insert into gift values(8,'º®°ÉÀÌTV',700001,800000);
-insert into gift values(9,'µå·³¼¼Å¹±â',800001,900000);
-insert into gift values(10,'¾çÂÊ¹®³ÃÀå°í',900001,1000000);
+insert into gift values(1,'ì°¸ì¹˜ì„¸íŠ¸',1,100000);
+insert into gift values(2,'ìƒ´í‘¸ì„¸íŠ¸',100001,200000);
+insert into gift values(3,'ì„¸ì°¨ìš©í’ˆì„¸íŠ¸',200001,300000);
+insert into gift values(4,'ì£¼ë°©ìš©í’ˆì„¸íŠ¸',300001,400000);
+insert into gift values(5,'ì‚°ì•…ìš©ìì „ê±°',400001,500000);
+insert into gift values(6,'LCDëª¨ë‹ˆí„°',500001,600000);
+insert into gift values(7,'ë…¸íŠ¸ë¶',600001,700000);
+insert into gift values(8,'ë²½ê±¸ì´TV',700001,800000);
+insert into gift values(9,'ë“œëŸ¼ì„¸íƒê¸°',800001,900000);
+insert into gift values(10,'ì–‘ìª½ë¬¸ëƒ‰ì¥ê³ ',900001,1000000);
 commit ;
 
 DROP TABLE gogak purge;
@@ -366,26 +367,26 @@ create table gogak
  jumin char(13) ,
  point number) ;
 
-insert into gogak values (20010001,'¼­Áø¼ö','7510231369824',980000);
-insert into gogak values (20010002,'¼­Àç¼ö','7502241128467',73000);
-insert into gogak values (20010003,'ÀÌ¹Ì°æ','7506152123648',320000);
-insert into gogak values (20010004,'±èÀç¼ö','7512251063421',65000);
-insert into gogak values (20010005,'¹Úµ¿È£','7503031639826',180000);
-insert into gogak values (20010006,'±è½Å¿µ','7601232186327',153000);
-insert into gogak values (20010007,'½ÅÀº°æ','7604212298371',273000);
-insert into gogak values (20010008,'¿À³ª¶ó','7609112118379',315000);
-insert into gogak values (20010009,'±è¼³Èñ','7601202378641',542000);
-insert into gogak values (20010010,'ÀÓ¼¼Çö','7610122196482',265000);
-insert into gogak values (20010011,'ÃÖ¼ø±Ô','7711291186223',110000);
-insert into gogak values (20010012,'Á¤Çö¿µ','7704021358674',99000);
-insert into gogak values (20010013,'¾È±¤ÈÆ','7709131276431',470000);
-insert into gogak values (20010014,'¸ğº´È¯','7702261196365',298000);
-insert into gogak values (20010015,'³ëÁ¤È£','7712141254963',420000);
-insert into gogak values (20010016,'ÀÌÀ±³ª','7808192157498',598000);
-insert into gogak values (20010017,'¾ÈÀº¼ö','7801051776346',625000);
-insert into gogak values (20010018,'ÀÎ¿µ¹Î','7808091786954',670000);
-insert into gogak values (20010019,'±èÁö¿µ','7803242114563',770000);
-insert into gogak values (20010020,'Çã¿ì','7802232116780',730000);
+insert into gogak values (20010001,'ì„œì§„ìˆ˜','7510231369824',980000);
+insert into gogak values (20010002,'ì„œì¬ìˆ˜','7502241128467',73000);
+insert into gogak values (20010003,'ì´ë¯¸ê²½','7506152123648',320000);
+insert into gogak values (20010004,'ê¹€ì¬ìˆ˜','7512251063421',65000);
+insert into gogak values (20010005,'ë°•ë™í˜¸','7503031639826',180000);
+insert into gogak values (20010006,'ê¹€ì‹ ì˜','7601232186327',153000);
+insert into gogak values (20010007,'ì‹ ì€ê²½','7604212298371',273000);
+insert into gogak values (20010008,'ì˜¤ë‚˜ë¼','7609112118379',315000);
+insert into gogak values (20010009,'ê¹€ì„¤í¬','7601202378641',542000);
+insert into gogak values (20010010,'ì„ì„¸í˜„','7610122196482',265000);
+insert into gogak values (20010011,'ìµœìˆœê·œ','7711291186223',110000);
+insert into gogak values (20010012,'ì •í˜„ì˜','7704021358674',99000);
+insert into gogak values (20010013,'ì•ˆê´‘í›ˆ','7709131276431',470000);
+insert into gogak values (20010014,'ëª¨ë³‘í™˜','7702261196365',298000);
+insert into gogak values (20010015,'ë…¸ì •í˜¸','7712141254963',420000);
+insert into gogak values (20010016,'ì´ìœ¤ë‚˜','7808192157498',598000);
+insert into gogak values (20010017,'ì•ˆì€ìˆ˜','7801051776346',625000);
+insert into gogak values (20010018,'ì¸ì˜ë¯¼','7808091786954',670000);
+insert into gogak values (20010019,'ê¹€ì§€ì˜','7803242114563',770000);
+insert into gogak values (20010020,'í—ˆìš°','7802232116780',730000);
 commit ;
 
 DROP TABLE hakjum purge ;
@@ -446,12 +447,12 @@ create table p_grade
   s_pay  number ,
   e_pay  number );
 
-insert into p_grade values ('ÁÖÀÓ',0,24,1,2,12000000,29990000);
-insert into p_grade values ('´ë¸®',25,28,3,5,30000000,45000000);
-insert into p_grade values ('°úÀå',29,32,6,8,45010000,51000000);
-insert into p_grade values ('Â÷Àå',33,36,9,10,51010000,60000000);
-insert into p_grade values ('ºÎÀå',37,40,11,13,60010000,75000000);
-insert into p_grade values ('ÀÌ»ç',41,55,14,99,75010000,100000000);
+insert into p_grade values ('ì£¼ì„',0,24,1,2,12000000,29990000);
+insert into p_grade values ('ëŒ€ë¦¬',25,28,3,5,30000000,45000000);
+insert into p_grade values ('ê³¼ì¥',29,32,6,8,45010000,51000000);
+insert into p_grade values ('ì°¨ì¥',33,36,9,10,51010000,60000000);
+insert into p_grade values ('ë¶€ì¥',37,40,11,13,60010000,75000000);
+insert into p_grade values ('ì´ì‚¬',41,55,14,99,75010000,100000000);
 
 commit ;
 
@@ -476,7 +477,7 @@ SELECT  *  FROM dual ;
 commit;
 
 
--- insert all ½Ç½À¿ë Å×ÀÌºí
+-- insert all ì‹¤ìŠµìš© í…Œì´ë¸”
 
 drop table p_01 purge;
 drop table p_02 purge;
@@ -491,20 +492,20 @@ CREATE TABLE p_02
 
 
 
--- merge ½Ç½À¿ë Å×ÀÌºí
+-- merge ì‹¤ìŠµìš© í…Œì´ë¸”
 
 drop table pt_01 purge;
 drop table pt_02 purge;
 drop table p_total purge;
 
 create table pt_01
-(ÆÇ¸Å¹øÈ£ varchar2(8) , Á¦Ç°¹øÈ£ char(4) , ¼ö·® number , ±İ¾× number) ;
+(íŒë§¤ë²ˆí˜¸ varchar2(8) , ì œí’ˆë²ˆí˜¸ char(4) , ìˆ˜ëŸ‰ number , ê¸ˆì•¡ number) ;
 
 create table pt_02
-(ÆÇ¸Å¹øÈ£ varchar2(8) , Á¦Ç°¹øÈ£ char(4) , ¼ö·® number , ±İ¾× number) ;
+(íŒë§¤ë²ˆí˜¸ varchar2(8) , ì œí’ˆë²ˆí˜¸ char(4) , ìˆ˜ëŸ‰ number , ê¸ˆì•¡ number) ;
 
 create table p_total
-(ÆÇ¸Å¹øÈ£  varchar2(8) , Á¦Ç°¹øÈ£ char(4) , ¼ö·® number , ±İ¾× number) ;
+(íŒë§¤ë²ˆí˜¸  varchar2(8) , ì œí’ˆë²ˆí˜¸ char(4) , ìˆ˜ëŸ‰ number , ê¸ˆì•¡ number) ;
 
 INSERT ALL
  INTO pt_01 VALUES ('12010101','1000',1,500)
@@ -517,7 +518,7 @@ INSERT ALL
 
 commit;
 
--- DML ¿¡·¯ ·Î±ë ±â´É ½Ç½À¿ë Å×ÀÌºí
+-- DML ì—ëŸ¬ ë¡œê¹… ê¸°ëŠ¥ ì‹¤ìŠµìš© í…Œì´ë¸”
 
 DROP Table dml_err_test purge;
 
@@ -574,7 +575,7 @@ end;
  /
 
 
--- Á¦¾àÁ¶°Ç Å×½ºÆ®¿ë Å×ÀÌºí
+-- ì œì•½ì¡°ê±´ í…ŒìŠ¤íŠ¸ìš© í…Œì´ë¸”
 
 drop table test_novalidate purge ;
 
@@ -610,7 +611,7 @@ CREATE TABLE test_enable
 
 
 
--- Áı°èÇÔ¼ö ¿¬½ÀÀ» À§ÇÑ Å×ÀÌºí
+-- ì§‘ê³„í•¨ìˆ˜ ì—°ìŠµì„ ìœ„í•œ í…Œì´ë¸”
 
 drop table product purge ;
 
@@ -620,12 +621,12 @@ CREATE TABLE product
   p_price  number) ;
 
 
-insert into product values (100,'»õ¿ìÂ¯',800);
-insert into product values (101,'°¨ÀÚÂ¯',900);
-insert into product values (102,'¸ÀÅ«»ê',1000);
-insert into product values (103,'¿¡ÀÌ¼­',900);
-insert into product values (104,'¸ÀÂ¯±¸',800);
-insert into product values(105,'»şº¸·¹',1500);
+insert into product values (100,'ìƒˆìš°ì§±',800);
+insert into product values (101,'ê°ìì§±',900);
+insert into product values (102,'ë§›í°ì‚°',1000);
+insert into product values (103,'ì—ì´ì„œ',900);
+insert into product values (104,'ë§›ì§±êµ¬',800);
+insert into product values(105,'ìƒ¤ë³´ë ˆ',1500);
 commit;
 
 drop table panmae purge ;
@@ -675,16 +676,16 @@ create table member
 
 
 insert into member
- values (1001,'¼­À¯µù','7510231234567','a1234','simson','¾Æ³»ÀÌ¸§?','±èÃÊµù') ;
+ values (1001,'ì„œìœ ë”©','7510231234567','a1234','simson','ì•„ë‚´ì´ë¦„?','ê¹€ì´ˆë”©') ;
 
 insert into member
- values(1002,'±èÃÊµù','7509222345678','b1234','bobby','³²ÆíÀÌ¸§?','¼­À¯µù') ;
+ values(1002,'ê¹€ì´ˆë”©','7509222345678','b1234','bobby','ë‚¨í¸ì´ë¦„?','ì„œìœ ë”©') ;
 
 insert into member
- values (1003,'¼­»õ¾Ë','1410234567890','c1234','daddy','¾ÆºüÀÌ¸§?','¼­À¯µù');
+ values (1003,'ì„œìƒˆì•Œ','1410234567890','c1234','daddy','ì•„ë¹ ì´ë¦„?','ì„œìœ ë”©');
 
 insert into member
- values (1004,'¼­°ø·æ¾Ë','1609223456789','d1234','mommy','¾ö¸¶ÀÌ¸§?','±èÃÊµù') ;
+ values (1004,'ì„œê³µë£¡ì•Œ','1609223456789','d1234','mommy','ì—„ë§ˆì´ë¦„?','ê¹€ì´ˆë”©') ;
 
 
 
