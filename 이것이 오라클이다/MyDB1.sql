@@ -46,7 +46,7 @@ from emp;
 
 select deptno, job, round(avg(sal),1)
 from emp
-group by deptno, ROLLUP(job); --¾Õ¿¡ÀÖ´Â ÄÃ·³À¸·Î ¼Ò°è¸¦ ÇÑ°Í°ú °°°í ¸¶Áö¸·¿¡ ÀüÃ¼ ¼Ò°è
+group by deptno, ROLLUP(job); --ì•ì—ìˆëŠ” ì»¬ëŸ¼ìœ¼ë¡œ ì†Œê³„ë¥¼ í•œê²ƒê³¼ ê°™ê³  ë§ˆì§€ë§‰ì— ì „ì²´ ì†Œê³„
 
 select deptno, job, round(avg(sal),1)
 from emp
@@ -71,7 +71,6 @@ select s.name, d1.dname, d2.dname
 from student s, department d1, department d2
 where s.deptno1 = d1.deptno and s.deptno2 = d2.deptno(+);
 --outer join
-
 
 select s.studno, s.name ,e.total, h.grade
 from student s, exam_01 e, hakjum h
