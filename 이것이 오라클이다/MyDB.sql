@@ -1,5 +1,4 @@
 select email from employees;
-
 desc tab;
 
 select name ||'''s ID: '|| id ||', weight is '||weight ||'kg' from student;
@@ -10,4 +9,4 @@ select name, replace(jumin, substr(jumin,7,7), '*******') "jumin"
 from student;
 
 select name, tel, replace(tel, substr(tel, -4,4), '****') "replace" 
-from student where deptno1 = 101; --µÚ¿¡¼­ 4¹øÂ°¿¡¼­ ½ÃÀÛÇØ¼­ 4°³
+from student where deptno1 = 101; --ë’¤ì—ì„œ 4ë²ˆì§¸ì—ì„œ ì‹œì‘í•´ì„œ 4ê°œ
