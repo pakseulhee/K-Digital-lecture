@@ -1,39 +1,40 @@
---1. dept Å×ÀÌºíÀ» »ç¿ëÇÏ¿© deptno¸¦ ºÎ¼­#, dnameÀ» ºÎ¼­¸í, loc¸¦ À§Ä¡·Î º°¸íÀ» ¼³Á¤ÇÏ¿© Ãâ·ÂÇÏ¼¼¿ä.
-select dcode as "ºÎ¼­#", dname as "ºÎ¼­¸í", area as "À§Ä¡" from dept2;
---2. ±³¼ö Å×ÀÌºí(professor)À» »ç¿ëÇÏ¿© 'È«±æµ¿(±³¼ö)' ¿Í °°ÀÌ ±³¼ö¸í(Á÷±Ş) Çü½ÄÀ¸·Î ÇÏ°í ÄÃ·³¸íÀº ±³¼ö´Ô À¸·Î Ãâ·ÂÇÏ¼¼¿ä.
-select name||'('||position||')' as "±³¼ö´Ô" from professor;
---3. Between ¿¬»êÀÚ¸¦ »ç¿ëÇÏ¿© student Å×ÀÌºí¿¡¼­ ¸ö¹«°Ô°¡ 60kg~80kgÀÎ »ç¶÷ÀÇ ÀÌ¸§°ú Ã¼ÁßÀ» Ãâ·ÂÇÏ¼¼¿ä.
+--1. dept í…Œì´ë¸”ì„ ì‚¬ìš©í•˜ì—¬ deptnoë¥¼ ë¶€ì„œ#, dnameì„ ë¶€ì„œëª…, locë¥¼ ìœ„ì¹˜ë¡œ ë³„ëª…ì„ ì„¤ì •í•˜ì—¬ ì¶œë ¥í•˜ì„¸ìš”.
+select dcode as "ë¶€ì„œ#", dname as "ë¶€ì„œëª…", area as "ìœ„ì¹˜" from dept2;
+--2. êµìˆ˜ í…Œì´ë¸”(professor)ì„ ì‚¬ìš©í•˜ì—¬ 'í™ê¸¸ë™(êµìˆ˜)' ì™€ ê°™ì´ êµìˆ˜ëª…(ì§ê¸‰) í˜•ì‹ìœ¼ë¡œ í•˜ê³  ì»¬ëŸ¼ëª…ì€ êµìˆ˜ë‹˜ ìœ¼ë¡œ ì¶œë ¥í•˜ì„¸ìš”.
+select name||'('||position||')' as "êµìˆ˜ë‹˜" from professor;
+--3. Between ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì—¬ student í…Œì´ë¸”ì—ì„œ ëª¸ë¬´ê²Œê°€ 60kg~80kgì¸ ì‚¬ëŒì˜ ì´ë¦„ê³¼ ì²´ì¤‘ì„ ì¶œë ¥í•˜ì„¸ìš”.
 select name, weight from student where weight between 60 and 80;
---4. like ¿¬»êÀÚ¸¦ »ç¿ëÇÏ¿© student Å×ÀÌºí¿¡¼­ ¼ºÀÌ "±è" ¾¾ÀÎ »ç¶÷À» Á¶È¸ÇÏ¼¼¿ä.
-select name from student where name like '±è%';
---5. student Å×ÀÌºí¿¡¼­ jumin Ä®·³À» »ç¿ëÇØ¼­ ÅÂ¾î³­ ´ŞÀÌ 8¿ùÀÎ »ç¶÷ÀÇ ÀÌ¸§°ú »ı³â¿ùÀÏÀ» Ãâ·ÂÇÏ¼¼¿ä.
-select name, substr(jumin, 3, 2) "»ı³â¿ùÀÏ" from student where substr(jumin, 3, 2) = '08';
---6. professor Å×ÀÌºí¿¡¼­ 101¹ø ÇĞ°ú ±³¼öµéÀÇ ÀÌ¸§°ú ±Ş¿©, bonus, ¿¬ºÀÀ» Ãâ·ÂÇÏ¼¼¿ä. ´Ü, ¿¬ºÀÀº (pay*12+bonus)·Î °è»êÇÏ°í bonus°¡ ¾ø´Â ±³¼ö´Â bonus¸¦0À¸·Î Ã³¸®ÇÏ¿© °è»êÇÏ¼¼¿ä.
-select name, pay, bonus, (pay*12+nvl(bonus,0)) "¿¬ºÀ" from professor where deptno=101;
---7. student Å×ÀÌºíÀÇ jumin Ä®·³À» ÂüÁ¶ÇÏ¿© ÇĞ»ıµéÀÇ ÀÌ¸§°ú ÅÂ¾î³­ ´Ş, ±×¸®°í ºĞ±â¸¦ Ãâ·ÂÇÏ¼¼¿ä. ÅÂ¾î³­ ´ŞÀÌ 01~03¿ùÀº 1/4ºĞ±â, 04~06¿ùÀº 2/4ºĞ±â, 07~09¿ùÀº 3/4ºĞ±â, 10~12¿ùÀº 4/4ºĞ±â·Î Ãâ·ÂÇÏ¼¼¿ä.
-select name, substr(jumin,3,2) "Ãâ»ı¿ù", 
-            case when (substr(jumin,3,2)) between '01' and '03' then '1/4ºĞ±â'
-                   when (substr(jumin,3,2)) between '04' and '06' then '2/4ºĞ±â'
-	     when (substr(jumin,3,2)) between '07' and '09' then '3/4ºĞ±â'
-	     when (substr(jumin,3,2)) between '10' and '12' then '4/4ºĞ±â' 
-                   else '¾ÈÅÂ¾î³²'
-             end "ºĞ±â" from student;
---8. professor Å×ÀÌºí¿¡¼­ ÇĞ°úº°·Î ±³¼öµéÀÇ Æò±Õ ±Ş¿©¸¦ Ãâ·ÂÇÏ½Ã¿À.
-select deptno, round(avg(nvl(pay,0)),2) "Æò±Õ±Ş¿©" from professor group by deptno;
---9. professor Å×ÀÌºí¿¡¼­ Æò±Õ ±Ş¿©°¡ 450 ÀÌ»óÀÎ ºÎ¼­ÀÇ ºÎ¼­¹øÈ£¿Í Æò±Õ±Ş¿©¸¦ ±¸ÇÏ¼¼¿ä.
+--4. like ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì—¬ student í…Œì´ë¸”ì—ì„œ ì„±ì´ "ê¹€" ì”¨ì¸ ì‚¬ëŒì„ ì¡°íšŒí•˜ì„¸ìš”.
+select name from student where name like 'ê¹€%';
+--5. student í…Œì´ë¸”ì—ì„œ jumin ì¹¼ëŸ¼ì„ ì‚¬ìš©í•´ì„œ íƒœì–´ë‚œ ë‹¬ì´ 8ì›”ì¸ ì‚¬ëŒì˜ ì´ë¦„ê³¼ ìƒë…„ì›”ì¼ì„ ì¶œë ¥í•˜ì„¸ìš”.
+select name, substr(jumin, 3, 2) "ìƒë…„ì›”ì¼" from student where substr(jumin, 3, 2) = '08';
+--6. professor í…Œì´ë¸”ì—ì„œ 101ë²ˆ í•™ê³¼ êµìˆ˜ë“¤ì˜ ì´ë¦„ê³¼ ê¸‰ì—¬, bonus, ì—°ë´‰ì„ ì¶œë ¥í•˜ì„¸ìš”. ë‹¨, ì—°ë´‰ì€ (pay*12+bonus)ë¡œ ê³„ì‚°í•˜ê³  bonusê°€ ì—†ëŠ” êµìˆ˜ëŠ” bonusë¥¼0ìœ¼ë¡œ ì²˜ë¦¬í•˜ì—¬ ê³„ì‚°í•˜ì„¸ìš”.
+select name, pay, bonus, (pay*12+nvl(bonus,0)) "ì—°ë´‰" from professor where deptno=101;
+--7. student í…Œì´ë¸”ì˜ jumin ì¹¼ëŸ¼ì„ ì°¸ì¡°í•˜ì—¬ í•™ìƒë“¤ì˜ ì´ë¦„ê³¼ íƒœì–´ë‚œ ë‹¬, ê·¸ë¦¬ê³  ë¶„ê¸°ë¥¼ ì¶œë ¥í•˜ì„¸ìš”. íƒœì–´ë‚œ ë‹¬ì´ 01~03ì›”ì€ 1/4ë¶„ê¸°, 04~06ì›”ì€ 2/4ë¶„ê¸°, 07~09ì›”ì€ 3/4ë¶„ê¸°, 10~12ì›”ì€ 4/4ë¶„ê¸°ë¡œ ì¶œë ¥í•˜ì„¸ìš”.
+select name, substr(jumin,3,2) "ì¶œìƒì›”", 
+            case when (substr(jumin,3,2)) between '01' and '03' then '1/4ë¶„ê¸°'
+                   when (substr(jumin,3,2)) between '04' and '06' then '2/4ë¶„ê¸°'
+	     when (substr(jumin,3,2)) between '07' and '09' then '3/4ë¶„ê¸°'
+	     when (substr(jumin,3,2)) between '10' and '12' then '4/4ë¶„ê¸°' 
+                   else 'ì•ˆíƒœì–´ë‚¨'
+             end "ë¶„ê¸°" from student;
+--8. professor í…Œì´ë¸”ì—ì„œ í•™ê³¼ë³„ë¡œ êµìˆ˜ë“¤ì˜ í‰ê·  ê¸‰ì—¬ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.
+select deptno, round(avg(nvl(pay,0)),2) "í‰ê· ê¸‰ì—¬" from professor group by deptno;
+--9. professor í…Œì´ë¸”ì—ì„œ í‰ê·  ê¸‰ì—¬ê°€ 450 ì´ìƒì¸ ë¶€ì„œì˜ ë¶€ì„œë²ˆí˜¸ì™€ í‰ê· ê¸‰ì—¬ë¥¼ êµ¬í•˜ì„¸ìš”.
 select deptno, avg(nvl(pay,0)) from professor group by deptno  having avg(pay)>450;
---10. gogak Å×ÀÌºí°ú gif Å×ÀÌºíÀ» joinÇÏ¿© °í°´ÀÇ ¸¶ÀÏ¸®Áö Æ÷ÀÎÆ®º°·Î ÃÖ´ë ¹ŞÀ» ¼ö ÀÖ´Â »óÇ°À» Á¶È¸ÇÏ¿© °í°´ÀÇ ÀÌ¸§°ú »óÇ°¸íÀ» Ãâ·ÂÇÏ¼¼¿ä.
-select go.gname "°í°´¸í", go.point "POINT", gi.gname "»óÇ°¸í" from gogak go, gift gi where go.point between gi.g_start and gi.g_end;
---11. 10¹ø ¹®Á¦¿¡¼­ Á¶È¸ÇÑ »óÇ°ÀÇ ÀÌ¸§°ú ÇÊ¿ä ¼ö·®ÀÌ ¸î °³ÀÎÁö Á¶È¸ÇÏ¼¼¿ä.
-select gi.gname "»óÇ°¸í", count(*) "ÇÊ¿ä¼ö·®" from gogak go, gift gi where go.point between gi.g_start and gi.g_end group by gi.gname;
---12. student Å×ÀÌºí°ú professor Å×ÀÌºíÀ» join ÇÏ¿© ÇĞ»ıÀÌ¸§°ú Áöµµ±³¼ö ÀÌ¸§À» Ãâ·ÂÇÏ¼¼¿ä. ´Ü, Áöµµ±³¼ö°¡ °áÁ¤µÇÁö ¾ÊÀº ÇĞ»ıÀÇ ¸í´Üµµ ÇÔ²² Ãâ·ÂÇÏ¼¼¿ä.
-select s.name "ÇĞ»ıÀÌ¸§", p.name "±³¼öÀÌ¸§" from student s, professor p where s.profno=p.profno(+);
---13. emp2 Å×ÀÌºíÀ» Á¶È¸ÇÏ¿© Á÷¿øµé Áß¿¡¼­ ÀÚ½ÅÀÇ Á÷±ŞÀÇ Æò±Õ¿¬ºÀ°ú °°°Å³ª ¸¹ÀÌ ¹Ş´Â »ç¶÷µéÀÇ ÀÌ¸§°ú Á÷±Ş, ÇöÀç ¿¬ºÀÀ» Ãâ·ÂÇÏ¼¼¿ä.
-select name "»ç¿øÀÌ¸§", position "Á÷±Ş", pay "±Ş¿©" from emp2 a where pay>=(select avg(pay) from emp2 b where a.position=b.position);
---14. Professor Å×ÀÌºí¿¡¼­ ½É½¼ ±³¼ö¿Í °°Àº ÀÔ»çÀÏ¿¡ ÀÔ»çÇÑ ±³¼ö Áß¿¡¼­ Á¶ÀÎÇü ±³¼öº¸´Ù ¿ù±ŞÀ» Àû°Ô ¹Ş´Â ±³¼öÀÇ ÀÌ¸§°ú ±Ş¿©, ÀÔ»çÀÏÀ» Ãâ·ÂÇÏ¼¼¿ä.
+--10. gogak í…Œì´ë¸”ê³¼ gif í…Œì´ë¸”ì„ joiní•˜ì—¬ ê³ ê°ì˜ ë§ˆì¼ë¦¬ì§€ í¬ì¸íŠ¸ë³„ë¡œ ìµœëŒ€ ë°›ì„ ìˆ˜ ìˆëŠ” ìƒí’ˆì„ ì¡°íšŒí•˜ì—¬ ê³ ê°ì˜ ì´ë¦„ê³¼ ìƒí’ˆëª…ì„ ì¶œë ¥í•˜ì„¸ìš”.
+select go.gname "ê³ ê°ëª…", go.point "POINT", gi.gname "ìƒí’ˆëª…" from gogak go, gift gi where go.point between gi.g_start and gi.g_end;
+--11. 10ë²ˆ ë¬¸ì œì—ì„œ ì¡°íšŒí•œ ìƒí’ˆì˜ ì´ë¦„ê³¼ í•„ìš” ìˆ˜ëŸ‰ì´ ëª‡ ê°œì¸ì§€ ì¡°íšŒí•˜ì„¸ìš”.
+select gi.gname "ìƒí’ˆëª…", count(*) "í•„ìš”ìˆ˜ëŸ‰" from gogak go, gift gi where go.point between gi.g_start and gi.g_end group by gi.gname;
+--12. student í…Œì´ë¸”ê³¼ professor í…Œì´ë¸”ì„ join í•˜ì—¬ í•™ìƒì´ë¦„ê³¼ ì§€ë„êµìˆ˜ ì´ë¦„ì„ ì¶œë ¥í•˜ì„¸ìš”. ë‹¨, ì§€ë„êµìˆ˜ê°€ ê²°ì •ë˜ì§€ ì•Šì€ í•™ìƒì˜ ëª…ë‹¨ë„ í•¨ê»˜ ì¶œë ¥í•˜ì„¸ìš”.
+select s.name "í•™ìƒì´ë¦„", p.name "êµìˆ˜ì´ë¦„" from student s, professor p where s.profno=p.profno(+);
+--13. emp2 í…Œì´ë¸”ì„ ì¡°íšŒí•˜ì—¬ ì§ì›ë“¤ ì¤‘ì—ì„œ ìì‹ ì˜ ì§ê¸‰ì˜ í‰ê· ì—°ë´‰ê³¼ ê°™ê±°ë‚˜ ë§ì´ ë°›ëŠ” ì‚¬ëŒë“¤ì˜ ì´ë¦„ê³¼ ì§ê¸‰, í˜„ì¬ ì—°ë´‰ì„ ì¶œë ¥í•˜ì„¸ìš”.
+select name "ì‚¬ì›ì´ë¦„", position "ì§ê¸‰", pay "ê¸‰ì—¬" from emp2 a where pay>=(select avg(pay) from emp2 b where a.position=b.position);
+--14. Professor í…Œì´ë¸”ì—ì„œ ì‹¬ìŠ¨ êµìˆ˜ì™€ ê°™ì€ ì…ì‚¬ì¼ì— ì…ì‚¬í•œ êµìˆ˜ ì¤‘ì—ì„œ ì¡°ì¸í˜• êµìˆ˜ë³´ë‹¤ ì›”ê¸‰ì„ ì ê²Œ ë°›ëŠ” êµìˆ˜ì˜ ì´ë¦„ê³¼ ê¸‰ì—¬, ì…ì‚¬ì¼ì„ ì¶œë ¥í•˜ì„¸ìš”.
 select name, pay, hiredate from professor where
-hiredate = (select hiredate from professor where name='½É½¼') and
-pay < (select pay from professor where name='Á¶ÀÎÇü');
---15. emp2 Å×ÀÌºíÀ» »ç¿ëÇÏ¿© ÀüÃ¼ Á÷¿ø Áß °úÀå Á÷±ŞÀÇ ÃÖ¼Ò ¿¬ºÀÀÚº¸´Ù ¿¬ºÀÀÌ ³ôÀº »ç¶÷ÀÇ ÀÌ¸§°ú Á÷±Ş, ¿¬ºÀÀ» Ãâ·ÂÇÏ¼¼¿ä. ´Ü, ¿¬ºÀ Ãâ·Â Çü½ÄÀº Ãµ ´ÜÀ§ ±¸ºĞ ±âÈ£¿Í ¿ø Ç¥½Ã¸¦ ÇÏ¼¼¿ä.
-select name "ÀÌ¸§", position "Á÷±Ş", to_char(pay,'L999,999,999')||' ¿ø' "¿¬ºÀ" from emp2 where
-pay > any (select pay from emp2 where position = '°úÀå');
+hiredate = (select hiredate from professor where name='ì‹¬ìŠ¨') and
+pay < (select pay from professor where name='ì¡°ì¸í˜•');
+		       
+--15. emp2 í…Œì´ë¸”ì„ ì‚¬ìš©í•˜ì—¬ ì „ì²´ ì§ì› ì¤‘ ê³¼ì¥ ì§ê¸‰ì˜ ìµœì†Œ ì—°ë´‰ìë³´ë‹¤ ì—°ë´‰ì´ ë†’ì€ ì‚¬ëŒì˜ ì´ë¦„ê³¼ ì§ê¸‰, ì—°ë´‰ì„ ì¶œë ¥í•˜ì„¸ìš”. ë‹¨, ì—°ë´‰ ì¶œë ¥ í˜•ì‹ì€ ì²œ ë‹¨ìœ„ êµ¬ë¶„ ê¸°í˜¸ì™€ ì› í‘œì‹œë¥¼ í•˜ì„¸ìš”.
+select name "ì´ë¦„", position "ì§ê¸‰", to_char(pay,'L999,999,999')||' ì›' "ì—°ë´‰" from emp2 where
+pay > any (select pay from emp2 where position = 'ê³¼ì¥');
