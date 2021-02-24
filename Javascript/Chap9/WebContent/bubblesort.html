@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var arry=[4,5,3,1,2];
+var temp;
+function bubble_sort(compare){
+	for(var j=0; j<arry.length-1;j++){
+		for(var i=0; i<arry.length-1;i++){
+			if(compare(arry[i], arry[i+1])){
+				temp = arry[i];
+				arry[i] = arry[i+1];
+				arry[i+1] = temp;
+			}
+		}
+	}
+	console.log(arry);
+}
+var compare_asc = function(x,y){
+	return x>y;
+}
+bubble_sort(compare_asc);
+
+var compare_desc = function(x,y){
+	return x<y;
+}
+bubble_sort(compare_desc);
+</script>
+</head>
+<body>
+
+</body>
+</html>
