@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	$(function(){
+		$('#button').click(function(e){
+			var id = $('#id').val();
+			if(id=='') {
+				alert('입력요망');
+				e.preventDefault();
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<input type='text' id='id'>
+	<a id='button' href='jquery_style2.html'>확인</a>
+</body>
+</html>

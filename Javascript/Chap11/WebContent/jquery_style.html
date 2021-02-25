@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- <style>
+.box{
+	float:left;
+	margin:10px;
+	width:100px; height:100px;
+	background:red}
+</style> -->
+<script>
+/* $(function(){
+	$('.box').css('float','left');
+	$('.box').css('margin','10px');
+	$('.box').css('width','100px');
+	$('.box').css('height','100px');
+	$('.box').css('width','100px');
+	$('.box').css('backgroundColor','red');
+}); */
+
+$(function(){
+	$('.box').css({
+		float:'left';
+		margin:10;
+		width:100px; 
+		height:100px;
+		backgroundColor:red;
+	});
+});
+</script>
+
+</head>
+<body>
+	<div class='box'></div>
+	<div class='box'></div>
+	<div class='box'></div>
+</body>
+</html>
