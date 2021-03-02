@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload = function(event){
+	alert(event);
+	var button=document.getElementById('button');
+	button.onclick=function(e){
+		alert(e);
+		alert(this);
+		this.textContent += '*';
+	}
+}
+</script>
+</head>
+<body>
+	<button id="button">버튼</button>
+</body>
+</html>

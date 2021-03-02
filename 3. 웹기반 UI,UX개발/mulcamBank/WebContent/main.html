@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+$(function(){
+	$('.login').click(function(){
+		$('#article1').show();
+		$('#article2').hide();
+		$('#article3').hide();
+		$('#article4').hide();
+	});
+});
+</script>
+
+<style>
+.font_center{text-align: center;}
+#mul {
+	background-color: orange;
+	
+}
+#copyright{
+	background-color: gray;
+}
+#topic{
+	width: 150px;
+	height: 70px;
+	background-color: gray;
+	border: 10px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #A9A9A9;
+	float:left;
+	list-style-type: none;
+	overflow:hidden;	
+}
+.menu {
+	background-color: pink;
+}
+
+#topic > a {
+	display: block;
+	line-height: 70px;
+}
+
+</style>
+
+</head>
+<body>
+	<div class ="container">
+	<header>
+		<h1 id ='mul'>멀캠은행</h1>
+	</header>	
+	</div>
+
+	
+	<section id='topics'>
+		<ul>
+			<li id='topic' class='makeacc'>
+				<a href="#" class="font_center">계좌개설</a>
+			</li>
+			<li id='topic' class='balance'>
+				<a href="#" class="font_center">입금</a>
+			</li>
+			<li id='topic' class='deposit'>
+				<a href="#" class="font_center">출금</a>
+			</li>
+			<li id='topic' class='search'>
+				<a href="#" class="font_center">계좌조회</a>
+			</li>
+			<li id='topic' class='allsearch'>
+				<a href="#" class="font_center">전체 계좌조회</a>	
+			</li>
+		</ul>
+		
+		<ul>
+			<li id='topic' class='login'>
+				<a href="#" class="font_center">로그인</a>
+			</li>
+		</ul>	
+	</section>
+	<article id ='article1' class='menu'>
+		<h1>[ 로그인 ]</h1>
+		<table>
+			<tr>
+				<td><label for="id">아이디</label></td>
+				<td><input type="text" id="id" name="id"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="pass">비밀번호</label></td>
+				<td><input type="password" id="pass" name="pass"></td>
+			</tr>
+			
+			<tr>
+				<td></td><td><button>로그인</button></td>
+			</tr>
+			
+		</table>
+	</article>
+	<article id ='article2' class='menu'>
+		<h1>[ 계좌개설 ]</h1>		
+		<table>
+			<tr>
+				<td><label for="account">계좌번호</label></td>
+				<td><input type="text" id="acc" name="acc"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="name">이름</label></td>
+				<td><input type="text" id="name" name="name"></td>
+			</tr>	
+
+			<tr>
+				<td><label for="pay">입금액</label></td>
+				<td><input type="text" id="pay" name="pay"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="kind">계좌구분</label></td>
+				<td>
+					<input type="radio" id="general" name="acc">
+					<label for="general">일반</label>
+					<input type="radio" id="special" name="acc">
+					<label for="special">특수</label>
+				
+				</td>
+			</tr>
+				
+			<tr>
+				<td><label for="lavel">등급</label></td>
+				<td>
+					<select>
+						<option>VIP</option>						
+						<option>Gold</option>
+						<option>Silver</option>
+						<option>Normal</option>
+					</select>					
+				</td>
+			</tr>
+			
+			<tr>
+				<td></td><td><button>개설</button></td>
+			</tr>
+		</table>
+	</article>
+	<article id ='article3' class='menu'>
+			<h1>[ 입금 ]</h1>		
+	
+	</article>
+	<article id ='article4' class='menu'>
+			<h1>[ 출금 ]</h1>		
+	
+	
+	</article>
+	<article id ='article5' class='menu'>
+			<h1>[ 계좌조회 ]</h1>		
+			<table>
+				<tr>
+					<td><label for="accsearch">계좌조회</label></td>
+					<td><input type="text" id="accsearch" name="accsearch"></td>
+				</tr>
+				
+				<tr>
+					<td></td><td><button>조회</button></td>
+				</tr>
+				
+			</table>
+	
+	</article>
+	<article id ='article6' class='menu'>
+			<h1>[ 전체계좌조회 ]</h1>		
+
+	
+	</article>
+
+	<p id='copyright'>Copyright (c) 2021 multicampus bank</p>
+</body>
+</html>
